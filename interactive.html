@@ -1,292 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive CV</title>
-  <!-- Link to Bootstrap CSS file -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CV</title>
+    <!-- Link to Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  
+
 </head>
+
 <body>
-<script src= "js/theme.js"></script>
-<script src-="js/grade.js"></script>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">My CV</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li>
-        <li class="nav-item">
-            <button id="theme-toggle-btn" class="btn btn-secondary">Toggle Theme</button>
-        </li>
-        </li>
-      </ul>
-    </div>
-
     
-  </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My CV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li>
+                <li class="nav-item">
+                    <button id="theme-toggle-btn" class="btn btn-secondary">Toggle Theme</button>
+                </li>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
     <!-- Container for CV content -->
     <div class="container mt-5">
         <!-- Image and contact details section -->
         <div class="row">
-        <!-- Image column -->
-        <div class="col-md-4">
-            <img src="img/cat.jpg" alt="Profile image" class="img-fluid rounded-circle mx-auto d-block">
-        </div>
-        <!-- Contact details column -->
-        <div class="col-md-8">
-            <h2>Contact Details</h2>
-            <ul class="list-unstyled">
-            <li><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></li>
-            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State ZIP</li>
-            </ul>
-            <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
+            <!-- Image column -->
+            <div class="col-md-4">
+                <img src="img/cat.jpg" alt="Profile image" class="img-fluid rounded-circle mx-auto d-block">
+            </div>
+            <!-- Contact details column -->
+            <div class="col-md-8">
+                <h2>Contact Details</h2>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a></li>
+                    <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State ZIP</li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
         <!-- Other CV sections (e.g. About, Experience, Education, Skills, Projects) go here -->
     </div>
-    
+
     <div class="container mt-5">
         <!-- About section -->
         <h2 id="about">About</h2>
         <div></div>
         <!-- Container for CV content -->
-    <div class="container mt-5">
-    <!-- Image and contact details section -->
-    <!-- (code from previous example goes here) -->
-
-    <!-- Experience section -->
-    <h2 id="experience">Experience</h2>
-    <div class="accordion" id="experienceAccordion">
-        <div class="card">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Job Title at Company
-            </button>
-            </h5>
-        </div>
-
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#experienceAccordion">
-            <div class="card-body">
-            <p><strong>Dates:</strong> Month Year - Month Year</p>
-            <p>Job description goes here</p>
-            </div>
-        </div>
-        </div>
-        <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Job Title at Company
-            </button>
-            </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#experienceAccordion">
-            <div class="card-body">
-            <p><strong>Dates:</strong> Month Year - Month Year</p>
-            <p>Job description goes here</p>
-            </div>
-        </div>
-        </div>
-        <!-- Add more job experience as needed -->
-    </div>
-
-    <!-- Education section -->
-    <h2 id="education">Education</h2>
-    <ul class="list-group">
-        <li class="list-group-item">
-        <h4>Degree at University</h4>
-        <p><strong>Dates:</strong> Month Year - Month Year</p>
-        <p>Additional details about education go here</p>
-        </li>
-        <li class="list-group-item">
-        <h4>Degree at University</h4>
-        <p><strong>Dates:</strong> Month Year - Month Year</p>
-        <p>Additional details about education go here</p>
-        </li>
-        <!-- Add more education as needed -->
-    </ul>
-    <!-- Grades Section -->
-<section id="grades">
-    <div class="container">
-      <h2>Grades</h2>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-group">
-            <label for="module-select">Select a module:</label>
-            <select class="form-control" id="module-select">
-              <option>Module 1</option>
-              <option>Module 2</option>
-              <option>Module 3</option>
-            </select>
-          </div>
-          <div id="grade-display">
-            <!-- Grade display goes here -->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-    <!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-      
-    <h2>Projects</h2>
-      <div class="row">
-        <div class="col-lg-12">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Skills</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Project 1</td>
-                <td>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a diam ac justo egestas dignissim.
-                </td>
-                <td>HTML, CSS, JavaScript</td>
-              </tr>
-              <tr>
-                <td>Project 2</td>
-                <td>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a diam ac justo egestas dignissim.
-                </td>
-                <td>PHP, MySQL</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
-
-    <!-- Skills section -->
-    <h2 id="skills">Skills</h2>
-    <div class="row">
-    <div class="col-md-6">
-        <h3>Technical Skills</h3>
-        <ul class="list-group-item">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h3>Soft Skills</h3>
-        <ul class="list-group-item">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        </ul>
-    </div>
-    </div>
-
-
-        <!-- Container for CV content -->
         <div class="container mt-5">
-          <!-- Image and contact details section -->
-          <!-- (code for this section goes here) -->
-          <!-- Experience, education, skills, and projects sections -->
-          <!-- (code for these sections goes here) -->
-          <!-- Language skills section -->
-          <h2 id="language-skills">Language Skills</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Language 1</h3>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-              </div>
+            <!-- Image and contact details section -->
+            <!-- (code from previous example goes here) -->
+
+            <!-- Experience section -->
+            <h2 id="experience">Experience</h2>
+            <div class="accordion" id="experienceAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Job Title at Company
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#experienceAccordion">
+                        <div class="card-body">
+                            <p><strong>Dates:</strong> Month Year - Month Year</p>
+                            <p>Job description goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Job Title at Company
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                        data-parent="#experienceAccordion">
+                        <div class="card-body">
+                            <p><strong>Dates:</strong> Month Year - Month Year</p>
+                            <p>Job description goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more job experience as needed -->
             </div>
-            <div class="col-md-6">
-              <h3>Language 2</h3>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-              </div>
-            </div>
-            <div class="col-md-6">
-                <h3>Language 3</h3>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+
+            <!-- Education section -->
+            <h2 id="education">Education</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>Degree at University</h4>
+                    <p><strong>Dates:</strong> Month Year - Month Year</p>
+                    <p>Additional details about education go here</p>
+                </li>
+                <li class="list-group-item">
+                    <h4>Degree at University</h4>
+                    <p><strong>Dates:</strong> Month Year - Month Year</p>
+                    <p>Additional details about education go here</p>
+                </li>
+                <!-- Add more education as needed -->
+            </ul>
+            <!-- Grades Section -->
+            <section id="grades">
+                <div class="container">
+                    <h2>Grades</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="module-select">Select a module:</label>
+                                <select class="form-control" id="module-select">
+                                    <option>Module 1</option>
+                                    <option>Module 2</option>
+                                    <option>Module 3</option>
+                                </select>
+                            </div>
+                            <div id="grade-display">
+                                <!-- Grade display goes here -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <div class="container">
+
+                    <h2>Projects</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Project Name</th>
+                                        <th>Description</th>
+                                        <th>Skills</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Project 1</td>
+                                        <td>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a diam
+                                            ac justo egestas dignissim.
+                                        </td>
+                                        <td>HTML, CSS, JavaScript</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project 2</td>
+                                        <td>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a diam
+                                            ac justo egestas dignissim.
+                                        </td>
+                                        <td>PHP, MySQL</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Skills section -->
+            <h2 id="skills">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Technical Skills</h3>
+                    <ul class="list-group-item">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                        <li>Skill 3</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Soft Skills</h3>
+                    <ul class="list-group-item">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                        <li>Skill 3</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h3>Language 4</h3>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+
+
+            <div class="container mt-5">
+          
+                <!-- Language skills section -->
+                <h2 id="language-skills">Language Skills</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Language 1</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Language 2</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Language 3</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Language 4</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <hr>
+            <!-- References Section -->
+            <section id="references">
+                <div class="container">
+                    <h2 class="text-center text-uppercase text-secondary mb-0">References</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <h4>Reference 1</h4>
+                                    <p>
+                                        Name: John Doe<br>
+                                        Company: ABC Corp<br>
+                                        Title: CEO<br>
+                                        Phone: 555-555-5555<br>
+                                        Email: john.doe@abccorp.com
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <h4>Reference 2</h4>
+                                    <p>
+                                        Name: Jane Smith<br>
+                                        Company: XYZ Inc<br>
+                                        Title: CFO<br>
+                                        Phone: 444-444-4444<br>
+                                        Email: jane.smith@xyzinc.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="contactModalLabel">
+                                Contact Information
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Phone: +353 8712 34 567</br>
+                                Email: <a href="mailto:damioyedele24@gmail.com">damioyedele24@gmail.com</a><br>
+                                LinkedIn: <a
+                                    href="https://www.linkedin.com/in/damilare-oyedele/%22%3Elinkedin.com/in/damilare-oyedele/"></a></br>
+                                GitHub: <a href="https://github.com/dami-oyedele%22%3Edami-oyedele"></a></br>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The modal button -->
+    <button
+    type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+    Contact
+    </button>
+      </div>
+    </div>
+    <!-- Modal with my contact information -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">
+              Contact Information
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Phone: +353 8712 34 567</br>
+              Email: <a href="mailto:damioyedele24@gmail.com">damioyedele24@gmail.com</a><br> 
+              LinkedIn: <a href="https://www.linkedin.com/in/damilare-oyedele/">linkedin.com/in/damilare-oyedele/</a></br>
+              GitHub: <a href="https://github.com/dami-oyedele">dami-oyedele</a></br>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
-        
-    <hr>
-    <!-- References Section -->
-    <section id="references">
-    <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">References</h2>
-        <hr>
-        <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="row">
-            <div class="col-lg-6 mb-4">
-                <h4>Reference 1</h4>
-                <p>
-                Name: John Doe<br>
-                Company: ABC Corp<br>
-                Title: CEO<br>
-                Phone: 555-555-5555<br>
-                Email: john.doe@abccorp.com
-                </p>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <h4>Reference 2</h4>
-                <p>
-                Name: Jane Smith<br>
-                Company: XYZ Inc<br>
-                Title: CFO<br>
-                Phone: 444-444-4444<br>
-                Email: jane.smith@xyzinc.com
-                </p>
-            </div>
-            </div>
-        </div>
-        </div>
+      </div>
     </div>
-    </section>
-        
-
+    <script src="js/theme.js"></script>
+    <script src="js/grade.js"></script>
+</body>
