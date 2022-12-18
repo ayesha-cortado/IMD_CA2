@@ -1,9 +1,17 @@
-document.getElementById('contact-button').addEventListener('click', function() {
-    var contactDetails = document.getElementById('contact-details');
-    if (contactDetails.classList.contains('d-none')) {
-      contactDetails.classList.remove('d-none');
-    } else {
-      contactDetails.classList.add('d-none');
-    }
-  });
-  
+var modal = document.getElementById("contact-modal");
+var btn = document.getElementById("contact-button");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

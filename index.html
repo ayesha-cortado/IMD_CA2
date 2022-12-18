@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Interactive CV</title>
-    <!-- Link to Bootstrap CSS file -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -15,12 +14,13 @@
 
 
     <link rel="stylesheet" href="css/c.css">
+   
 </head>
 
 
 
 <body>
-    <header class="header text-center p-5" style="height: 210em">
+    <header class="header text-center p-5" style="height: 250em">
         <h1 class="blog-name pt-lg-4 mb-0">Ayesha Cortado</h1>
     
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -39,19 +39,26 @@
                         Language(German)<br>
                         <div>
                             <br>
-                            <button type="button" id="contact-button" class="btn btn-primary">Show Contact Details</button>
-                            <div id="contact-details" class="d-none">
-                                <ul class="list-unstyled">
-                                    <br>
-                                    <li><i class="glyphicon glyphicon-envelope"></i> <a
-                                            href="mailto:email@example.com">ayeshs@cortado.com</a></li>
-                                    <br>
-                                    <li><i class="glyphicon glyphicon-phone"></i> (087) 149 3353</li>
-                                    <br>
-                                    <li><i class="glyphicon glyphicon-map-marker"></i> Dublin City</li>
-                                </ul>
+                            <button id="contact-button">Contact</button>
+                            
+                            <div id="contact-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <h3>Contact Details</h3>
+                                        <li><i class="glyphicon glyphicon-envelope"></i> <a
+                                                href="mailto:email@example.com">X00165424@mytudublin.ie</a></li>
+                                        <br>
+                                        <li><i class="glyphicon glyphicon-phone"></i> (087) 149 3353</li>
+                                        <br>
+                                        <li><i class="glyphicon glyphicon-map-marker"></i> Dublin City</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                            
+                            
+                            </div>
                         <ul class="social-list list-inline py-3 mx-auto">
                             <li class="list-inline-item">
                                 <a class="nav-link" href="#experience">Experience</a>
@@ -68,9 +75,8 @@
                             <li class="list-inline-item">
                                 <a class="nav-link" href="#references">References</a>
                             </li>
-                        </ul><!--//social-list-->
+                        </ul>
                         <hr>
-                    </div><!--//profile-section-->
     
                     <ul class="navbar-nav flex-column text-start">
                         <li class="nav-item">
@@ -92,13 +98,11 @@
 
 
 
-    <!-- Container for CV content -->
+
     <div id="cv_content">
         <div class="col-md-8">
             <div class="container md-5 pt-5">
                 <div class="container rounded border border-info" style="background-color: #bed4e1;">
-
-                    <!-- Experience section -->
                     <h2 id="experience">Experience</h2>
                     <hr>
                     <div class="card">
@@ -139,7 +143,6 @@
                     <div class="accordion" id="educationAccordion">
                         <div class="card">
                             <div class="card-header" data-toggle="collapse" data-target="#education1">
-                                <!-- Your achievement heading goes here -->
                                 <h2 id="education">Education</h2>
                                 <div class="collapse" id="education1">
                                     <div class="card-body">
@@ -184,12 +187,33 @@
                     <div class="accordion" id="achievementsAccordion">
                         <div class="card">
                             <div class="card-header" data-toggle="collapse" data-target="#achievement1">
-                                <!-- Your achievement heading goes here -->
-                                <h2>Academic achievement</h2>
+                                <h2>Achievements</h2>
                                 <div class="collapse" id="achievement1">
                                     <div class="card-body">
-                                        <!-- Your achievement content goes here -->
-                                        <p>won 1st</p>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type of Achievement</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+    
+                                            <tbody>
+                                                <tr>
+                                                    <td>Academic Achievement</td>
+                                                    <td>This award  was  awarded to those who excelled  both in class and exams.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Effort and Co-operation</td>
+                                                    <td>This award was awarded to those who always helped out in various event in school and contributed a lot in class.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Player of the Year(Badminton) 2017&2018</td>
+                                                    <td> This award was for the player who always attended training sessions and helped out with setting out equipment and handling registration for the team.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -285,8 +309,6 @@
         <div class="col-md-8">
             <div class="container md-5">
                 <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
-
-                    <!-- Skills section -->
                     <h2 id="skills">Skills</h2>
                     <hr>
                     <div class="row pb-5">
@@ -314,8 +336,6 @@
         <div class="col-md-8">
             <div class="container md-5">
                 <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
-
-                    <!-- Language skills section -->
                     <div class="container mt-5">
                         <h2>Language Skills</h2>
                         <hr class="mr-5">
@@ -354,6 +374,97 @@
             </div>
         </div>
 
+        <div id="cv_content">
+            <div class="col-md-8">
+                <div class="container md-5 pt-5">
+                    <div class="container rounded border border-info" style="background-color: #bed4e1;">
+                        <h2 id="experience">Experience</h2>
+                        <hr>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"> McDonald's, Crew Member</h5>
+                            </div>
+                        </div>
+    
+                        <div class="card-body">
+                            <p><strong>June 2019 - August 2021</strong> </p>
+                            <p>Duties include cash handling,customer service, training new recruits, communication, teamwork,
+                                multitasking.</p>
+                            <p><strong>1)</strong> Swan Shopping Centre, Rathmines Rd Lower, Rathmines, Dublin 6</p>
+                            <p><strong>2)</strong> Charlestown Shopping Centre, Saint Margaret's Road, Finglas North, Dublin 11
+                            </p>
+                            <p><strong>3)</strong> Nutgrove Way, Rathfarnham, Dublin 14</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Division IT, IT Support </h5>
+                            </div>
+                        </div>
+    
+                        <div class="card-body">
+                            <p><strong>January 2022 - April 2022</strong> </p>
+                            <p>Managing the inventory, making sure the hardware is up-to-date, preventing errors, resolving
+                                customer problems ranging from software to hardware</p>
+                            <p> De Veldoven 6a, 3342 GR Hendrik-Ido-Ambacht, Netherlands</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+                <div class="col-md-8">
+                    <div class="container md-5 pt-5">
+                        <div class="container rounded border border-info" style="background-color: #bed4e1;">
+                            <h2 id="experience">Interests for Work</h2>
+                            <hr>
+                            <div class="container">
+                                <div id="carouselFunc" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#carouselFunc" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselFunc" data-slide-to="1"></li>
+                                    <li data-target="#carouselFunc" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner h-100 pb-3">
+                                    <div class="carousel-item active h-100">
+                                      <img src="img/riot1.jpg" class="d-block w-25 h-25" alt="Riot Game Logo">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h4>Riot Games</h4>
+                                        <p class="ml-5">An American video game developer, publisher and esports tournament organizer</p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item h-100 pb-3">
+                                      <img src="img/riot2.webp" class="d-block w-25 h-25" alt="...">
+                                      <div class="carousel-caption d-none d-md-block mr-5">
+                                        <h4>Based in Los Angeles, California.</h4>
+                                        <p class="ml-5">Interested in the offices located in Dublin and Berlin.</p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item h-100 pb-3">
+                                      <img src="img/riot3.jpg" class="d-block w-25 h-25" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h5>Interested Career:</h5>
+                                        <p>Staff C++ Software Engineer - Player Platform, Riot SDK</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselFunc" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselFunc" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+           
+        
 
         <div class="col-md-8">
             <div class="container md-5">
@@ -396,6 +507,40 @@
             </div>
         </div>
     </div>
+
+    <div class="col-md-8">
+        <div class="container md-5">
+            <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                <h2 id="hobbies">Hobbies/Interests</h2>
+                <hr>
+                <div class="row pb-5">
+                    <div class="col-md-4">
+                            <ul class="list-group-item">
+                                <p>Calligraphy</p>
+                                <p>Video Games</p>
+                                <p>Reading</p>
+                            </ul>
+                    </div>
+                    <div class="col-md-4">
+                            <ul class="list-group-item">
+                                <p>Coding</p>
+                                <p>Badminton</p>
+                                <p>Listening to music</p>
+                            </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group-item">
+                            <p>Dancing</p>
+                            <p>Singing</p>
+                            <p>Fishing</p>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <button onclick="topFunction()" id="scrollBtn" title="Go to top">Scroll to top</button>
     
     <!-- Javascripts -->
@@ -404,11 +549,14 @@
     <script src="js/contact.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/carousel.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-0hR1lgJhbV0nkB5LW3qc5BpX9hZC5k5zG3qm6A/1/mFjm+n2Q8n1RUOjKM/ZLgI" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js" integrity="sha384-0zV9M/fZf6UdT6TnTZJF9X1YQ6U8x+RbflJwjTKF/quyxPzGvMbZjH2J9YM8Ib8" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
     
 </body>
 
