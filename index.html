@@ -10,7 +10,10 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    
+
     <link rel="stylesheet" href="css/c.css">
 </head>
 
@@ -32,10 +35,10 @@
                     <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li>
                 <li class="nav-item">
@@ -48,296 +51,313 @@
 
 
     <!-- Container for CV content -->
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-8" >
+            <div class="container md-5">
+                <div class="container mt-5 pt-5 rounded border border-info" style="background-color: #bed4e1; ">
 
-                <!-- Image and contact details section -->
-                <div class="row">
-                    <!-- Image column -->
-                    <div class="col-md-4 text-center text-md-end">
-                        <img src="img/frog.jpg" alt="Profile image" class="img-fluid pb-2"
-                            style="height: 85%; width: 75%;">
-                    </div>
-                        <div class="col-md-4 text-md-start">
-                            <!-- About section -->
-                            <h2 class="display-3" style="font-size: large;"><strong>Ayesha Cortado</strong></h2>
-                            <p class="display-3" style="font-size: large;">Software Developer</p>
-                            <p class="display-3" style="font-size: large;">:3</p>
-                            <!-- Contact details column -->
-                        </div>
-                        <div>
-                            <button type="button" id="contact-button" class="btn btn-primary">Show Contact Details</button>
-                            <div id="contact-details" class="d-none">
-                                <ul class="list-unstyled">
-                                    <li><i class="glyphicon glyphicon-envelope"></i> <a
-                                            href="mailto:email@example.com">email@example.com</a></li>
-                                    <li><i class="glyphicon glyphicon-phone"></i> (123) 456-7890</li>
-                                    <li><i class="glyphicon glyphicon-map-marker"></i> 123 Main Street, City, State ZIP</li>
-                                </ul>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="https://twitter.com/example"><i
-                                                class="fab fa-linkedin"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Container for CV content -->
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Experience section -->
-                <h2 id="experience">Experience</h2>
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0"> McDonald's, Crew Member</h5>
-                    </div>
-                </div>
-
-                <div class="card-body">
-                    <p><strong>June 2019 - August 2021</strong> </p>
-                    <p>Duties include cash handling,customer service, training new recruits, communication, teamwork, multitasking.</p>
-                    <p><strong>1)</strong> Swan Shopping Centre, Rathmines Rd Lower, Rathmines, Dublin 6</p>
-                    <p><strong>2)</strong> Charlestown Shopping Centre, Saint Margaret's Road, Finglas North, Dublin 11</p>
-                    <p><strong>3)</strong> Nutgrove Way, Rathfarnham, Dublin 14</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">Division IT, IT Support </h5>
-                    </div>
-                </div>
-
-                <div class="card-body">
-                    <p><strong>January 2022 - April 2022</strong> </p>
-                    <p>Duties include  multitasking, communication, troubleshooting, handling tickets.</p>
-                    <p> De Veldoven 6a, 3342 GR Hendrik-Ido-Ambacht, Netherlands</p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Education section -->
-                <h2 id="education">Education</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h4>Degree at University</h4>
-                        <p><strong>Dates:</strong> Month Year - Month Year</p>
-                        <p>Additional details about education go here</p>
-                    </li>
-                    <li class="list-group-item">
-                        <h4>Degree at University</h4>
-                        <p><strong>Dates:</strong> Month Year - Month Year</p>
-                        <p>Additional details about education go here</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Grades Section -->
-                <section id="grades">
-                    <div class="container">
-                        <h2>Grades</h2>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="module-select">Select a module:</label>
-                                    <select class="form-control" id="module-select">
-                                        <option>Maths</option>
-                                        <option>German</option>
-                                        <option>Software Development</option>
-                                    </select>
-                                </div>
-                                <div id="grade-display"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Projects Section -->
-                <section id="projects">
-                    <div class="container">
-                        <h2>Projects</h2>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Project Name</th>
-                                            <th>Description</th>
-                                            <th>Skills</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>Minecraft Website</td>
-                                            <td>Website created in 1st year</td>
-                                            <td>HTML, CSS</td>
-                                        </tr>
-                                        <tr>
-                                            <td>SuperWorth!</td>
-                                            <td>Ecommerce website created in 2nd year - worked on admin section</td>
-                                            <td>HTML, CSS, Javascript, Django</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Regnitz Sales Tool</td>
-                                            <td>International IT Management Project.Discussed about the goals and objectives.Created use case diagrams and business process models. Stakeholder analysis along with a Requirement analysis.  </td>
-                                            <td>Communication, Teamwork</td>
-                                        </tr>
-                                        <tr>
-                                            <td>LosGehts!</td>
-                                            <td>Mobile phone app that allows users to plan their travels in the city of Bamberg, Germany.</td>
-                                            <td>Android Visual Studio, Java</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Skills section -->
-                <h2 id="skills">Skills</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Technical Skills</h3>
-                            <ul class="list-group-item">
-                                <li>Programming Languages: Python, C#, Java</li>
-                                <li>High level rizz</li>
-                                <li>Project Management</li>
-                            </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Soft Skills</h3>
-                            <ul class="list-group-item">
-                                <li>Communication</li>
-                                <li>Teamwork</li>
-                                <li>Problem-Solving</li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <!-- Language skills section -->
-                <div class="container mt-5">
-                    <h2>Language Skills</h2>
+                    <!-- Image and contact details section -->
                     <div class="row">
-                        <div class="col-md-6">
-                            <h3>English</h3>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                                    aria-valuemin="0" aria-valuemax="100">100%</div>
+                        <!-- Image column -->
+                        <div class="col-md-4 text-center text-md-end">
+                            <img src="img/frog.jpg" alt="Profile image" class="img-fluid pb-2 rounded"
+                                style="height: 85%; width: 75%;">
+                        </div>
+                            <div class="col-md-4 text-md-start">
+                                <!-- About section -->
+                                <h2 class="display-3" style="font-size: large;"><strong>Ayesha Cortado</strong></h2>
+                                <p class="display-3" style="font-size: large;">Software Development Student</p>
+                                
+                                <!-- Contact details column -->
+                                <h2 class="display-3" style="font-size: large;"><strong>Personal Links</strong></h2>
+                                <p class="display-3" style="font-size: large;"><a href="https://github.com/X00165424">Github</a></p>
+                                <p class="display-3" style="font-size: large;"><a href="https://www.linkedin.com/in/ayeshacortado/">Linkedin</a></p>
+                
+                            </div>
+                            <div>
+                                <button type="button" id="contact-button" class="btn btn-primary">Show Contact Details</button>
+                                <div id="contact-details" class="d-none">
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <li><i class="glyphicon glyphicon-envelope"></i> <a
+                                                href="mailto:email@example.com">ayeshs@cortado.com</a></li>
+                                        <br>
+                                        <li><i class="glyphicon glyphicon-phone"></i> (087) 149 3353</li>
+                                        <br>
+                                        <li><i class="glyphicon glyphicon-map-marker"></i> Dublin City</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <h3>Tagalog</h3>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                                    aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+        <!-- Container for CV content -->
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                    
+                    <!-- Experience section -->
+                    <h2 id="experience">Experience</h2>
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"> McDonald's, Crew Member</h5>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <p><strong>June 2019 - August 2021</strong> </p>
+                        <p>Duties include cash handling,customer service, training new recruits, communication, teamwork, multitasking.</p>
+                        <p><strong>1)</strong> Swan Shopping Centre, Rathmines Rd Lower, Rathmines, Dublin 6</p>
+                        <p><strong>2)</strong> Charlestown Shopping Centre, Saint Margaret's Road, Finglas North, Dublin 11</p>
+                        <p><strong>3)</strong> Nutgrove Way, Rathfarnham, Dublin 14</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Division IT, IT Support </h5>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <p><strong>January 2022 - April 2022</strong> </p>
+                        <p>Managing the inventory, making sure the hardware is up-to-date, preventing errors, resolving customer problems ranging from software to hardware</p>
+                        <p> De Veldoven 6a, 3342 GR Hendrik-Ido-Ambacht, Netherlands</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                    
+                    <!-- Education section -->
+                    <h2 id="education">Education</h2>
+                    <hr>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4><strong>Leaving Cert 2018</strong></h4>
+                            <p><strong>Dates:</strong> September 2013 - June 2018</p>
+                            <p>St. Louis High School Rathmines, 6 Charleville Rd, Rathmines, Dublin</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4><strong>QQI/PLC Level 5 Computer Programming</strong></h4>
+                            <p><strong>Dates:</strong> August 2018 - June 2019</p>
+                            <p>Rathmines College of Further Education, Townhall, Rathmines, Dublin 6 </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4><strong>Bachelor of Computing w/a Language(German)</strong></h4>
+                            <p><strong>Dates:</strong> August 2019 - Present</p>
+                            <p>Technological University Dublin, Old Blessington Rd, Tallaght </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                    
+                    <!-- Grades Section -->
+                    <section id="grades">
+                        <div class="container">
+                            <h2>Grades</h2>
+                            <hr class="mr-5">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group pr-5">
+                                        <label for="module-select">Select a module:</label>
+                                        <select class="form-control" id="module-select">
+                                            <option disabled>Select Module</option>
+                                            <option>Maths</option>
+                                            <option>German</option>
+                                            <option>Software Development</option>
+                                        </select>
+                                    </div>
+                                    <div id="grade-display"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <h3>German</h3>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                
+                    <!-- Projects Section -->
+                    <section id="projects">
+                        <div class="container">
+                            <h2>Projects</h2>
+                            <hr class="mr-5">
+                            <div class="row">
+                                <div class="col-lg-12 pr-5">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Project Name</th>
+                                                <th>Description</th>
+                                                <th>Skills</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Minecraft Website</td>
+                                                <td>Website created in 1st year</td>
+                                                <td>HTML, CSS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SuperWorth!</td>
+                                                <td>Ecommerce website created in 2nd year - worked on admin section</td>
+                                                <td>HTML, CSS, Javascript, Django</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Regnitz Sales Tool</td>
+                                                <td>International IT Management Project.Discussed about the goals and objectives.Created use case diagrams and business process models. Stakeholder analysis along with a Requirement analysis.  </td>
+                                                <td>Communication, Teamwork</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LosGehts!</td>
+                                                <td>Mobile phone app that allows users to plan their travels in the city of Bamberg, Germany.</td>
+                                                <td>Android Visual Studio, Java</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                   
+                    <!-- Skills section -->
+                    <h2 id="skills">Skills</h2>
+                    <hr>
+                    <div class="row pb-5">
                         <div class="col-md-6">
-                            <h3>Irish</h3>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                            <h2>Technical Skills</h3>
+                                <ul class="list-group-item">
+                                    <li>Programming Languages: Python, C#, Java</li>
+                                    <li>Software proficiency</li>
+                                    <li>Project Management</li>
+                                </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Soft Skills</h3>
+                                <ul class="list-group-item">
+                                    <li>Communication</li>
+                                    <li>Teamwork</li>
+                                    <li>Problem-Solving</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+                   
+                    <!-- Language skills section -->
+                    <div class="container mt-5">
+                        <h2>Language Skills</h2>
+                        <hr class="mr-5">
+                        <div class="row pr-2">
+                            <div class="col-md-6">
+                                <h3>English</h3>
+                                <div class="progress mr-5">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="95">95%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Tagalog</h3>
+                                <div class="progress mr-5">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="90">90%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>German</h3>
+                                <div class="progress mr-5">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Rizz</h3>
+                                <div class="progress mr-5">
+                                    <div class="progress-bar" role="progressbar" style="width: 69%" aria-valuenow="69"
+                                        aria-valuemin="0" aria-valuemax="100">69%</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-md-8">
-        <div class="container md-5">
-            <div class="container mt-5">
-                <hr>
-                <section id="references">
-                    <div class="container">
-                        <h2>References</h2>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="row">
-                                    <div class="col-lg-6 mb-4">
-                                        <h4>Reference 1</h4>
-                                        <p>
-                                            Name: John Doe<br>
-                                            Company: ABC Corp<br>
-                                            Title: CEO<br>
-                                            Phone: 555-555-5555<br>
-                                            Email: john.doe@abccorp.com
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <h4>Reference 2</h4>
-                                        <p>
-                                            Name: Jane Smith<br>
-                                            Company: XYZ Inc<br>
-                                            Title: CFO<br>
-                                            Phone: 444-444-4444<br>
-                                            Email: jane.smith@xyzinc.com
-                                        </p>
+        <div class="col-md-8">
+            <div class="container md-5">
+                <div class="container mt-5 rounded border border-info" style="background-color: #bed4e1;">
+             
+                    <section id="references">
+                        <div class="container">
+                            <h2>References</h2>
+                            <hr class="mr-5">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <h4><strong>Reference 1</strong></h4>
+                                            <p>
+                                                Name: Ms. Shivangy Tohani<br>
+                                                Company: McDonald's<br>
+                                                Title: 1st Assistant Manager<br>
+                                                Phone: (083) 471 7336<br>
+                                                Email:shivangyt@gmail.com
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="col-lg-6 mb-4">
+                                            <h4><strong>Reference 2</strong></h4>
+                                            <p>
+                                                Name: Ms. Sian Walsh<br>
+                                                Company: -<br>
+                                                Title: Badminton Coach<br>
+                                                Phone: (02) 504 2728<br>
+                                                Email: ach_ire@gmail.com
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
 
 
     <!-- Javascripts -->
     <script src="js/theme.js"></script>
     <script src="js/grade.js"></script>
     <script src="js/contact.js"></script>
+
 </body>
 
